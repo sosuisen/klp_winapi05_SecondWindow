@@ -37,8 +37,7 @@ int APIENTRY wWinMain(HINSTANCE hInstance,
     if (!hwnd) return 0;
     // ウィンドウを表示
     ShowWindow(hwnd, nCmdShow);
-    // ウィンドウを再描画
-    UpdateWindow(hwnd);
+
     while (GetMessage(&msg, NULL, 0, 0) > 0) {
         TranslateMessage(&msg);
         DispatchMessage(&msg);
